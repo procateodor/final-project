@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Cart from "./Cart/Cart";
 import Header from "./Header/Header";
 import Home from "./Home/Home";
 import ProductDetails from "./ProductDetails/ProductDetails";
@@ -20,7 +21,7 @@ function App() {
             path="/categories/:categoryName"
             element={<div>Category details</div>}
           />
-          <Route path="/cart" element={<div>Cart</div>} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<div>Checkout</div>} />
           <Route path="/thanks" element={<div>Thank you</div>} />
           <Route path="/faq" element={<div>FaQ</div>} />
